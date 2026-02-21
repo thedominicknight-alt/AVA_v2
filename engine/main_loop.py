@@ -29,6 +29,8 @@ def ava_core_loop(input_data: str) -> str:
 
     # --- Step 1: Parse the input ---
     parsed = perceive_input(input_data)
+    from core.behaviour import log_interaction
+    log_interaction(input_data, 'conversation')
 
     # --- Fast path for simple questions ---
     from core.intent import is_simple_question
