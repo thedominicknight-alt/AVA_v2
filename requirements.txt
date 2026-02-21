@@ -1,0 +1,13 @@
+# AVA Requirements
+# Install with: pip install -r requirements.txt
+
+# Voice - Speech to text (Whisper runs locally)
+openai-whisper
+sounddevice
+numpy
+
+# GPIO (only works on Raspberry Pi)
+RPi.GPIO
+
+# Ollama uses standard library urllib - no extra package needed
+# But make sure Ollama is installed: curl -fsSL https://ollama.ai/install.sh | sh
